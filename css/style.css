@@ -1,0 +1,139 @@
+/*------------------------------------*\
+    RESET
+\*------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0b1 | 201101 
+    NOTE:WORK IN PROGRESS
+    USE WITH CAUTION AND TEST WITH ABANDON */
+
+html,body,div,span,applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary,
+time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    font:inherit;
+    vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+body{
+    line-height:1;
+}
+ol,ul{
+    list-style:none;
+}
+blockquote,q{
+    quotes:none;
+}
+blockquote:before,blockquote:after,
+q:before,q:after{
+    content:’’;
+    content:none;
+}
+/* remember to define visible focus styles! 
+:focus{
+    outline:?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins{
+    text-decoration:none;
+}
+del{
+    text-decoration:line-through;
+}
+
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* pretty hyphens */
+p {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+}
+
+
+/*------------------------------------*\
+    $Main
+\*------------------------------------*/
+
+body {
+	font-family: 'PT Serif', serif;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 1.3125em;
+	line-height: 1.52381em;
+	background:#eee;	
+}
+.wrapper {
+}
+.content {
+	width:500px;
+	margin:0 auto;
+	padding-top:150px;
+}
+h1, h2, h3 {
+	float:left;
+}
+.description {
+	margin-top:60px;
+	color:#666;	
+}
+.section-title span {
+	width:150px;
+}
+.projects {
+	margin-top:40px;
+}
+.project-descriptions {
+	float:left;
+	color:#666;		
+}
+.project-descriptions a {
+	margin-right:10px;
+}
+.projects h2 {
+	font-weight:900;
+	text-transform:uppercase;
+	width:200px;
+}
+.section-title span {
+	float:left;
+	
+}
+span {
+	font-weight:900;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+	color:#666;
+	border-bottom: 1px solid #666; /* Or whatever color you want */
+	padding-bottom:2px;
+    text-decoration: none;
+}
+/*------------------------------------*\
+    $Typography
+\*------------------------------------*/
+

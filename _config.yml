@@ -8,7 +8,7 @@ source:      .
 destination: ./_site
 #plugins:     ./_plugins
 future:      false
-lsi:         true
+lsi:         false
 #pygments:    false
 #markdown:    maruku
 permalink:   pretty

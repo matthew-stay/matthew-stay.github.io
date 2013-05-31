@@ -2,13 +2,9 @@
 layout: default
 ---
 
-<h1>
-	<div id="name">
-		<h1><span>Matt Stay</span> Graphic Designer</h1>
-	</div>
-</h1>
+
 <div class="description">
-	<p>I'm a designer working at <a href="www.inmunited.com">INM United</a> making mobile apps, interactive websites, and identity systems. Find me on <a href="http://www.twitter.com/staygraphic">Twitter</a>. Say <a href="mailto:hello@mattstay.com">hello</a>.</p>
+	<p>I'm a designer working at <a href="http://www.inmunited.com">INM United</a> making mobile apps, interactive websites, and identity systems. Find me on <a href="http://www.twitter.com/staygraphic">Twitter</a>. Or, say <a href="mailto:hello@mattstay.com">hello</a>.</p>
 </div>
 	
 
@@ -24,11 +20,11 @@ layout: default
 <!-- 
 {% for post in site.posts limit: 10 %}
 
-<div class="row-fluid">
-  <div class="span12">
+<div class="post-wrapper"><D-s>
+  <div class="post">
     <h2>{{ post.title }}</h2>
-    <h4>{{ post.date | date_to_long_string }}</h4>
-    <p>
+	<p>
+		{{ post.excerpt }}
       <a href="{{ post.url }}">Read Post</a>
     </p>
   </div>

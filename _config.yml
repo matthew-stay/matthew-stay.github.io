@@ -11,4 +11,4 @@ future:      false
 lsi:         false
 #pygments:    false
 #markdown:    maruku
-permalink:   pretty
+permalink: /:title.html

@@ -4,7 +4,7 @@ layout: posts
 permalink: /travel-reflection.html
 
 ---
-<div class="img-wrap">
+<div class="img-wrap post-1">
 </div>
 
 <div class="container">

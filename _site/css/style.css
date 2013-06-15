@@ -92,6 +92,7 @@ body {
 .container {
 	margin:0 auto;
 	padding-top:40px;
+	position:relative;
 }
 #header {
 	width:100%;
@@ -151,7 +152,7 @@ h1, h2, h3 {
 	width:100%;
 }
 .home h2 {
-bottom:50%;
+bottom:40%;
 position: absolute;
 width: 100%;
 text-align: center;
@@ -161,6 +162,7 @@ color:#fff;
 }
 .home .post a {
 	border-bottom:none;
+	width:100%;
 }
 .blog-entry {
 	background:#fff;
@@ -175,7 +177,15 @@ color:#fff;
 	background-size: cover!important;
 	background-position: center top!important;
 	position:relative;
-	background-image: url("../images/billboards/mountains.jpg");
+}
+.home .img-wrap {
+	-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-repeat: no-repeat;
+background-size: cover;
+height:150px;
+
 }
 .blog-entry img {
 }
@@ -207,6 +217,7 @@ color:#fff;
 .post-wrapper, .post, .post h2, .post h4, .post p, .post a, .post-detail {
 	float:left;
 	clear:both;
+	width:100%;
 }
 .blog-entry .post-wrapper {
 	margin-top:40px;
@@ -248,6 +259,9 @@ a {
     $Typography
 \*------------------------------------*/
 
+.post-1 {
+	background-image: url("../images/billboards/mountains.jpg");	
+}
 
 /*------------------------------------*\
     $Responsive

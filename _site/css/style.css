@@ -25,10 +25,6 @@ time,mark,audio,video{
     font-size:100%;
     font:inherit;
     vertical-align:baseline;
-   word-wrap: normal;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-   hyphens: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,aside,details,figcaption,figure,
@@ -68,11 +64,10 @@ table{
 }
 /* pretty hyphens */
 p {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -o-hyphens: auto;
-    hyphens: auto;
+   word-wrap: normal;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+   hyphens: none;
 }
 img, object, embed {
 max-width: 100%;

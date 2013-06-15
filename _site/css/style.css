@@ -112,12 +112,14 @@ h1, h2, h3 {
 	padding-top:20px;
 	padding-bottom:40px;
 	color:#666;	
+	margin:0 20px;	
 }
 .section-title span {
 	width:150px;
 }
 .projects {
 	margin-top:40px;
+	margin:0 20px;
 	padding-bottom:40px;
 }
 .project-descriptions {
@@ -145,7 +147,7 @@ h1, h2, h3 {
 	float:right;
 }
 .home {
-	width:320px;
+	width:100%;
 }
 .home h2 {
 bottom:50%;

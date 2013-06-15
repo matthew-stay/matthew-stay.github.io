@@ -142,7 +142,7 @@ h1, h2, h3 {
 	margin:40px 0;
 }
 .left {
-	margin-left:-260px;
+	float:left;
 }
 .right {
 	float:right;
@@ -190,7 +190,7 @@ height:150px;
 .blog-entry img {
 }
 .intro {
-	font-size:125%;
+	font-size:130%;
 	line-height:160%;
 	margin-bottom:20px;
 }
@@ -266,6 +266,9 @@ a {
     $Responsive
  *------------------------------------*/
 @media screen and (min-width: 40.5em) {
+	.left {
+	margin-left:-260px;		
+	}
   .home {
     width: 500px;
   }
@@ -279,6 +282,6 @@ a {
   .blog-entry .container {
 	width:700px;
 	margin:0 auto;
-}
-
+	font-size:90%;
+	}
 }

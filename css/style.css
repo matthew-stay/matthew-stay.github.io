@@ -70,7 +70,9 @@ p {
     -o-hyphens: auto;
     hyphens: auto;
 }
-
+img, object, embed {
+max-width: 100%;
+}
 
 /*------------------------------------*\
     $Main
@@ -154,7 +156,7 @@ position: absolute;
 width: 100%;
 text-align: center;
 z-index:3;
-font-size:2em;
+font-size:1.5em;
 color:#fff;
 }
 .home .post a {
@@ -164,7 +166,18 @@ color:#fff;
 	background:#fff;
 }
 .blog-entry .container {
-	width:700px;
+	margin:0 20px;
+	max-width: 40.625em;
+	font-size:77%;
+}
+.blog-entry .img-wrap {
+	height: 627px!important;
+	background-size: cover!important;
+	background-position: center top!important;
+	position:relative;
+	background-image: url("../images/billboards/mountains.jpg");
+}
+.blog-entry img {
 }
 .intro {
 	font-size:125%;
@@ -180,7 +193,8 @@ color:#fff;
 	color:#fff;
 }
 .post-info h1 {
-	font-size:4em;
+	font-size:2.875em;
+	line-height:1em;
 }
 .post-info .date {
 	padding-top:40px;
@@ -246,4 +260,12 @@ a {
   	padding-top:20px;
 	padding-bottom:40px;
   }
+  .home h2 {
+  	  font-size:2em;
+  }
+  .blog-entry .container {
+	width:700px;
+	margin:0 auto;
+}
+
 }

@@ -4,8 +4,8 @@ layout: posts
 permalink: /travel-reflection.html
 
 ---
-
-<img width="100%" src="images/billboards/mountains.jpg">
+<div class="img-wrap">
+</div>
 
 <div class="container">
 <h2 class="intro">After returning from California, I felt inspired to jumpstart a new site. This is the first article of images and experiences.</h2>

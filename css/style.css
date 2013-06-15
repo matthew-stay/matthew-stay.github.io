@@ -139,7 +139,9 @@ h1, h2, h3 {
 	float:left;
 }
 .photo-block {
-	margin:40px 0;
+	margin:0 auto;
+	padding:40px 0;
+	width:77%;
 }
 .left {
 	float:left;
@@ -149,19 +151,23 @@ h1, h2, h3 {
 }
 .home {
 	width:100%;
+	background-color:#eee;
 }
 .home h2 {
-bottom:40%;
-position: absolute;
-width: 100%;
-text-align: center;
-z-index:3;
-font-size:1.5em;
-color:#fff;
+	bottom:40%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	z-index:3;
+	font-size:1.5em;
+	color:#fff;
 }
 .home .post a {
 	border-bottom:none;
 	width:100%;
+}
+.home .post .img-wrap:hover {
+	cursor:pointer;
 }
 .blog-entry {
 	background:#fff;
@@ -180,14 +186,15 @@ color:#fff;
 }
 .home .img-wrap {
 	-webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-repeat: no-repeat;
-background-size: cover;
-height:150px;
-
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:210px;
 }
 .blog-entry img {
+	width:100%;
+	height:auto;
 }
 .intro {
 	font-size:130%;
@@ -266,8 +273,9 @@ a {
     $Responsive
  *------------------------------------*/
 @media screen and (min-width: 40.5em) {
-	.left {
-	margin-left:-260px;		
+	.left {	
+	}
+	.right {
 	}
   .home {
     width: 500px;
@@ -284,4 +292,7 @@ a {
 	margin:0 auto;
 	font-size:90%;
 	}
+	.blog-entry img {
+	}
+
 }

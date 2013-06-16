@@ -16,7 +16,7 @@ layout: default
 	</div>
 </div>
 
-
+<div class="blogroll"
 {% for post in site.posts limit: 10 %}
 <a class="post-link" href="{{ post.url }}">
 <div class="post-wrapper">
@@ -32,7 +32,8 @@ layout: default
 	</div>
 						</a>	
 
-{% endfor %}
+						{% endfor %}
+					</div>
 </div>
 </div> <!-- end #container .home -->
 

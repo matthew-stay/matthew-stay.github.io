@@ -142,6 +142,9 @@ h1, h2, h3 {
 	padding:40px 0;
 	width:77%;
 }
+.photo-block img {
+	float:left;	
+}
 .left {
 	float:left;
 }
@@ -326,7 +329,6 @@ footer {
   }
 	.vertical {
 		width:50% !important;
-		float:left;
 	}
 	.vertical:last-child {
 	}

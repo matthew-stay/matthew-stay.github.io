@@ -2,74 +2,59 @@
 layout: default
 ---
 
-<div class="container home block">
-	<div class="description">
-		<p>I'm a designer working at <a href="http://www.inmunited.com">INM United</a> making mobile apps, interactive websites, and identity systems. Find me on <a href="http://www.twitter.com/staygraphic">Twitter</a>. Or, say <a href="mailto:hello@mattstay.com">hello</a>.</p>
-	
-	<div class="projects">
-		<div class="section-title">
-			<span>Projects</span>
-		</div>
-		<div class="project-descriptions">
-			<a href="http://pluna.io">Pluna</a>
-			<a href="http://mattstay.com/scryer">Scryer</a>
-			<a href="http://mattstay.com/codex">Codex</a>
-		</div>
-	</div>
+<div class="home">
+  <div class="description-wrapper">
+    <div class="description">
+    <!-- <p>I'm a multi−disciplinary designer, maker and visual thinker. I currently create mobile apps, interactive websites, and identity systems at <a href="http://www.inmunited.com">INM United</a>. Find me on <a href="http://www.twitter.com/staygraphic">Twitter</a>. Or, say <a href="mailto:hello@mattstay.com">hello</a>. Learn More</p> -->
+    <p>I'm a multi−disciplinary designer, maker and visual thinker. I currently create mobile apps, interactive websites, and identity systems at <a href="http://www.inmunited.com">INM United</a>. Learn More</p>
+  </div>
 </div>
+   <div class="work">
+     <div class="grid">
+       <!-- width of .grid-sizer used for columnWidth -->
+       <div class="grid-sizer"></div>
+       <div class="gutter-sizer"></div>
+       <!-- <div class="grid-item"><img src="../images/ink.jpg"></div> -->
+       <!-- <div class="grid-item"><a href="/work/art/"><img src="../images/illustration-large.jpg"></a></div> -->
+       <div class="grid-item"><a href="https://www.behance.net/gallery/34043992/Albuquerque-Museum-Exhibit" target="_blank"><img src="../images/abq-cover-5.jpg"></a><p><a href="https://www.behance.net/gallery/34043992/Albuquerque-Museum-Exhibit" target="_blank">Albuquerque Museum of Art &amp; History</a></p></div>
+       <div class="grid-item"><a href="/work/art/"><img src="../images/ink-cover-2.jpg"></a><p><a href="/work/art/">Ink Landscape</a></p></div>
+       <!-- <div class="grid-item "><a href="/work/abq/"><img src="../images/art-series.jpg"><p>Original Illustrations.</p></a></div> -->
+       <div class="grid-item "><a href="/scyer/"><img src="../images/scryer-cover.jpg"></a><p><a href="/scyer/">Scryer - Something &amp; Else generator.</a></p></div>
+       <div class="grid-item "><a href="/pluna/"><img src="../images/pluna-cover-2.jpg"></a><p><a href="/pluna/">Pluna - Plant calculator for clean air.</a></p></div>
+       <!-- <div class="grid-item "><img src="../images/ff-large3.jpg"></div> -->
 
-<!-- <div class="blogroll">
-{% for post in site.posts limit: 10 %}
-<a class="post-link" href="{{ post.url }}">
-<div class="post-wrapper">
-		<div class="post">
-				<h2>{{ post.title }}</h2>
-				<p> -->
-			<!-- 	{% if post.content contains '<!--more-->' %}
-					{{ post.content | split:'<!--more-->' | first }}
-				{% endif %} -->
-				<!-- </p>
-	
-		</div>
-	</div>
-						</a>	
+       <div class="grid-item "><a href="https://www.behance.net/gallery/34057850/First-Fridays-Art-Walk/" target="_blank"><img src="../images/rva-cover-2.jpg"></a><p><a href="https://www.behance.net/gallery/34057850/First-Fridays-Art-Walk/" target="_blank">First Fridays identity &amp; webapp</a></p></div>
+       <!-- <div class="grid-item grid-item--width-logo"><img src="../images/rr-logo3.jpg"></div> -->
+       <!-- <div class="grid-item grid-item--width3"><img src="../images/srf-large.jpg"></div> -->
+       <!-- <div class="grid-item grid-item--width2"><img src="../images/bbv-large.jpg"></div> -->
+       <!-- <div class="grid-item grid-item--width2"><img src="../images/vaw-large.jpg"></div> -->
+       <!-- <div class="grid-item grid-item--width2"><img src="../images/something-else-large.jpg"></div> -->
+       <!-- <div class="grid-item grid-item--width-logo"><img src="../images/mr-logo2.jpg"></div>
+       <div class="grid-item grid-item--width-logo"><img src="../images/ff-logo2.jpg"></div>
+       <div class="grid-item grid-item--width2"><img src="../images/book1-large.jpg"></div>
+       <!-- <div class="grid-item"><img src="../images/vk-logo.jpg"></div> -->
 
-						{% endfor %}
-					</div>
-</div> -->
-</div> <!-- end #container .home -->
+       <!-- <div class="grid-item grid-item--width-logo"><img src="../images/vk-logo2.jpg"></div>
+       <div class="grid-item grid-item--width-logo"><img src="../images/mr-logo2.jpg"></div>
+       <div class="grid-item grid-item--width-logo"><img src="../images/ff-logo2.jpg"></div> -->
 
-
-<!-- Check for Pagination
-
-    <div class="pagination">
-      <ul>
-        {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-          <li><a href="/">Prev</a></li>
-          {% else %}
-          <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
-          {% endif %}
-        {% else %}
-        <li><span class="disabled">Prev</span></li>
-        {% endif %}
-        {% if paginator.page == 1 %}
-        <li><span class="active">1</span></li>
-        {% else %}
-        <li><a href="/">1</a></li>
-        {% endif %}
-        {% for count in (2..paginator.total_pages) %}
-          {% if count == paginator.page %}
-          <li><span class="active">{{ count }}</span></li>
-          {% else %}
-          <li><a href="/page{{ count }}">{{ count }}</a></li>
-          {% endif %}
-        {% endfor %}
-        {% if paginator.next_page %}
-        <li><a href="/page{{ paginator.next_page }}">Next</a></li>
-        {% else %}
-        <li><span class="disabled">Next</span></li>
-        {% endif %}
-      </ul>
-    </div>
-	-->
+       <!-- <div class="grid-item grid-item--width2"></div>
+       <div class="grid-item grid-item--width2"></div> -->
+     </div>
+  </div>
+    <!-- <li><img src="http://placehold.it/600x480"></li>
+    <li><img src="../images/bbv-banner.png"></li>
+    <li><img src="../images/abq-banner.png"></li>
+    <li><img src="http://placehold.it/480x300"></li>
+    <li><img src="http://placehold.it/400x300"></li>
+    <li><img src="http://placehold.it/550x300"></li>
+    <li><img src="http://placehold.it/440x300"></li>
+    <li><img src="http://placehold.it/520x300"></li>
+    <li><img src="http://placehold.it/280x300"></li>
+  </ul>
+ <ul class="work2">
+    <li><img src="http://placehold.it/1440x550"></li>
+    <li><img src="http://placehold.it/1440x550"></li>
+    <li><img src="http://placehold.it/1440x550"></li>
+  </ul> -->
+</div>

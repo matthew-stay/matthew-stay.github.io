@@ -1,14 +1,43 @@
-#safe:        false
-#auto:        true
-#server:      true
-#server_port: 4000
-baseurl:     /
-#url: http://localhost:4000
-source:      .
-destination: ./_site
-#plugins:     ./_plugins
-future:      false
-lsi:         false
-#pygments:    false
-#markdown:    maruku
-permalink: /:title.html
+# Site settings
+title: Matt Stay - Design Studio
+email: hello@mattstay.com
+description: "Product Design, UX/UI, Art & Illustration"
+baseurl: ""
+url: "http://mattstay.com"
+
+# URL of your avatar or profile pic (you could use your GitHub profile pic)
+avatar: /images/logo-large2.png
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email:
+  facebook:
+  flickr:
+  github: matthew-stay
+  instagram:
+  linkedin:
+  pinterest:
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: staygraphic
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _scss
+  style: :compressed
+
+# Use the following plug-ins
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+# Exclude these files from your production _site
+exclude:
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md

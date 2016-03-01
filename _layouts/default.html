@@ -1,5 +1,80 @@
-{% include header.html %}
+<!DOCTYPE html>
+<html>
 
-  		{{content}}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <!-- <link href="//fonts.googleapis.com/css?family=Alike:400|Vollkorn:400|Lora:400|Lato:700|PT+Serif:400|Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-{% include footer.html %}
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,600,500,400' rel='stylesheet' type='text/css'>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/jquery.background-check.min.js"></script>
+    <!-- <script src="../js/masonry.pkgd.min.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/velocity.min.js"></script>
+    <script src="../js/velocity.ui.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+</head>
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar target">
+            <img src="{{ site.baseurl }}/images/mattstay-logo.png" data-pin-nopin="true">
+          </a>
+          <div class="clear">
+          <span class="logo-title"><a href="">Matt Stay </br> <div class="asdf">Graphic Design &amp; Illustration</a></div></span>
+
+        </div>
+          <!-- <span class="logo-description">Logos, Identity, UX/IA, Mobile, Digital, Photography, Illustration</span> -->
+
+          <!-- <img src="{{ site.avatar }}" /> -->
+          <!-- <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div> -->
+          <!-- <div class="bottom-bar"></div> -->
+          <nav class="navigation target">
+            <a class="target" href="{{ site.baseurl }}/">Work</a>
+          <!-- <a class="target" href="{{ site.baseurl }}/blog">Journal</a> -->
+            <a class="target" href="{{ site.baseurl }}/about">About</a>
+
+          </nav>
+        </header>
+      </div>
+
+    </div>
+
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <!-- <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div> -->
+    <script>
+    if(false == /(^|;)\s?first=1\s?($|;)/i.test(document.cookie)) {
+        document.body.id="first";
+        document.cookie = "first=1; expire= path=/";
+    }
+    </script>
+    {% include analytics.html %}
+    </body>
+</html>

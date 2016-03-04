@@ -1,0 +1,185 @@
+nav {
+  text-align:center;
+  float:right;
+  display:block;
+  margin: 4px 50px 0 0;
+  padding: 5px 0;
+  font-weight:500;
+  color:#333;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 17px;
+  }
+
+  a {
+    text-align: left;
+    margin: 0 4px;
+  }
+}
+
+.masthead {
+  border-bottom:1px solid #EEEEEE;
+  margin:0 auto;
+  height:75px;
+  margin-top:15px;
+  font-size: 17px;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  span {
+    float:left;
+    font-weight:600;
+    padding:10px 0;
+    display:block;
+  }
+  .logo-title {
+    // color: #183D4E;
+    padding-left:30px;
+  }
+  .logo-description {
+    font-weight:500;
+  }
+  a.logo {
+    position: relative;
+    top: 6px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    float:left;
+  }
+}
+
+p {
+  padding-top:5px;
+  font-size:123px;
+  a {
+    border-bottom:1px solid #dbdbdb;
+    font-size:1em;
+    &:hover {
+      padding-bottom:0px;
+      border-bottom:1px solid #dbdbdb;
+      color: #666666;
+    }
+  }
+}
+
+.large-type {
+  font-size:1.3em;
+  line-height:1.5em;
+}
+
+.description {
+  width: 570px;
+  padding: 30px 0 30px 0;
+  line-height: 1.5em;
+  clear: both;
+}
+
+#grid[data-columns]::before {
+	content: '3 .column.size-1of3';
+}
+
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of3 { width: 33.333%; }
+.col-large, .col-medium, .col-small, .col-xsmall {
+  float:left;
+}
+.col-large {
+  width:66%;
+}
+.col-med {
+  width:50%;
+}
+.col-small {
+  width:33%;
+}
+.col-xsmall {
+  width:25%;
+}
+
+@media screen and (min-width: 1200px) {
+  #wrapper {
+    max-width: 1120px; /* 960 px */
+    margin: 0 auto;
+  }
+  #grid .item:nth-of-type(3n+1){
+    padding-right:20px;
+  }
+  #grid .item:nth-of-type(3n+2){
+    padding-right:20px;
+  }
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1199px) {
+  #wrapper {
+    max-width: 55em; /* 960 px */
+    margin: 0 auto;
+  }
+  #grid[data-columns]::before {
+    content: '3 .column.size-1of3';
+  }
+  #grid .item:nth-of-type(3n+1){
+    padding-right:20px;
+  }
+  #grid .item:nth-of-type(3n+2){
+    padding-right:20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1008px) {
+  #wrapper {
+    max-width: 45em; /* 960 px */
+    margin: 0 auto;
+  }
+	#grid[data-columns]::before {
+		content: '2 .column.size-1of2';
+	}
+  #grid .item:nth-of-type(odd){
+    padding-right:20px;
+  }
+  .col-large, .col-medium, .col-small, .col-xsmall {
+    width:100%;
+    float:none;
+  }
+}
+@media screen and (max-width: 767px){
+  #wrapper {
+    width:100%;
+    max-width:100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  #grid {
+    width:100%;
+  }
+	#grid[data-columns]::before {
+		content: '1 .column.size-1of1';
+  }
+  img {
+    width:100%;
+  }
+  .col-large, .col-medium, .col-small, .col-xsmall {
+    width:100%;
+    float:none;
+  }
+  .job-role {
+      display:none;
+  }
+  nav {
+    position: absolute;
+    top: 35px;
+    left: 85px;
+  }
+}
+
+/* Again, you’re free to use and define the classes: */
+.column { float: left; }
+.size-1of1 { width: 100%; }
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.333%; }

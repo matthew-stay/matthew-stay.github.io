@@ -15,30 +15,19 @@
     <![endif]-->
 
     <!-- Custom CSS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Raleway:700,600,500,400' rel='stylesheet' type='text/css'>
-    <script src="../js/scripts.js"></script>
-    <script src="../js/jquery.backstretch.min.js"></script>
-    <script src="../js/jquery.background-check.min.js"></script>
-    <!-- <script src="../js/masonry.pkgd.min.js"></script> -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
-    <script src="../js/velocity.min.js"></script>
-    <script src="../js/velocity.ui.js"></script>
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+
 </head>
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
+    <div id="wrapper">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar target">
+          <a href="{{ site.baseurl }}/" class="logo target col-sm-1 col-xs-3">
             <img src="{{ site.baseurl }}/images/mattstay-logo.png" data-pin-nopin="true">
           </a>
           <div class="clear">
-          <span class="logo-title"><a href="">Matt Stay </br> <div class="asdf">Graphic Design &amp; Illustration</a></div></span>
-
-        </div>
+            <span class="logo-title"><a href="">Matt Stay </br> <div class="job-role">Graphic Design &amp; Illustration</a></div></span>
+          </div>
           <!-- <span class="logo-description">Logos, Identity, UX/IA, Mobile, Digital, Photography, Illustration</span> -->
 
           <!-- <img src="{{ site.avatar }}" /> -->
@@ -51,17 +40,11 @@
             <a class="target" href="{{ site.baseurl }}/">Work</a>
           <!-- <a class="target" href="{{ site.baseurl }}/blog">Journal</a> -->
             <a class="target" href="{{ site.baseurl }}/about">About</a>
-
           </nav>
         </header>
-      </div>
 
-    </div>
-
-    <div id="main" role="main" class="container">
       {{ content }}
-    </div>
-
+      </div>
     <!-- <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
@@ -76,5 +59,14 @@
     }
     </script>
     {% include analytics.html %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/jquery.background-check.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/velocity.min.js"></script>
+    <script src="../js/velocity.ui.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/salvattore.min.js"></script>
     </body>
 </html>

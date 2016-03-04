@@ -20,6 +20,9 @@ nav {
   }
 }
 
+.align-right {
+  float:right;
+}
 .masthead {
   border-bottom:1px solid #EEEEEE;
   margin:0 auto;
@@ -79,16 +82,23 @@ p {
   line-height: 1.5em;
   clear: both;
 }
+.description-wrapper {
+  margin:20px 0 0 0;
+}
 
+.project p {
+  padding-bottom:20px;
+}
 #grid[data-columns]::before {
 	content: '3 .column.size-1of3';
 }
 
 /* These are the classes that are going to be applied: */
 .column { float: left; }
+.column-right { float: right; }
 .size-1of3 { width: 33.333%; }
-.col-large, .col-medium, .col-small, .col-xsmall {
-  float:left;
+.col-xlarge {
+  width:75%;
 }
 .col-large {
   width:66%;

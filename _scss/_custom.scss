@@ -152,10 +152,21 @@ a.logo {
 }
 
 
+#grid[data-columns]::before, #grid-archive[data-columns]::before {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    font-size: 1px;
+}
+
 // MEDIA QUERIES
 @media screen and (min-width: 1441px) {
   #grid-archive[data-columns]::before {
     content: '3 .column.size-1of3';
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    font-size: 1px;
   }
 }
 @media screen and (min-width: 1300px) and (max-width:1440px ){
@@ -365,7 +376,6 @@ a.logo {
       }
       p {
         padding-top:4px;
-        font-weight:500;
       }
     }
   }

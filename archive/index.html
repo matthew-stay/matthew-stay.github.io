@@ -1,0 +1,23 @@
+---
+layout: default
+title: Archive | Matt Stay
+---
+
+<div>
+      <div class="description-wrapper">
+      </div>
+      <div id="grid-archive" data-columns>
+
+        {% for image in site.static_files %}
+            {% if image.path contains 'images/archive' %}
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+            {% endif %}
+        {% endfor %}
+
+        <!-- <a id="fancybox" href="{{file.url}}" title="{{file.name}}">
+          <img src="{{file.url}}" alt="{{file.name}}" />
+      </a> -->
+
+
+      </div>
+</div>

@@ -20,14 +20,42 @@
 
 </head>
   <body>
+    <div class="nav-wrap">
+      <a href="{{ site.baseurl }}/" class="logo target col-sm-1 col-xs-3">
+        <img src="{{ site.baseurl }}/images/mattstay-logo.png" data-pin-nopin="true">
+      </a>
+      <div class="column col-small">
+        <p class="name-wrap">
+          <span class="name">Matt Stay</span>
+          <span class="occupation">Graphic Design &amp; Illustration</span>
+      </p>
+    </div>
+    <div class="column-right">
+      <nav class="navigation target">
+        <a class="target" href="{{ site.baseurl }}/about">About</a>
+        <a class="target" href="{{ site.baseurl }}/">Work</a>
+        <!-- <a class="target" href="{{ site.baseurl }}/archive">Archive</a> -->
+        <!-- <a class="target" href="{{ site.baseurl }}/blog">Journal</a> -->
+      </nav>
+    </div>
+
+    </div>
+
     <div id="wrapper">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="logo target col-sm-1 col-xs-3">
+
+      <div class="home">
+      {{ content }}
+    </div>
+    <div class="column-full clearfix footer">Copyright &copy; Matt Stay 2016</div>
+  </div>
+
+       <!-- <header class="masthead clearfix"> -->
+          <!-- <a href="{{ site.baseurl }}/" class="logo target col-sm-1 col-xs-3">
             <img src="{{ site.baseurl }}/images/mattstay-logo.png" data-pin-nopin="true">
           </a>
           <div class="clear">
             <span class="logo-title"><a href="">Matt Stay </br> <div class="job-role">Graphic Design &amp; Illustration</a></div></span>
-          </div>
+          </div> -->
           <!-- <span class="logo-description">Logos, Identity, UX/IA, Mobile, Digital, Photography, Illustration</span> -->
 
           <!-- <img src="{{ site.avatar }}" /> -->
@@ -36,14 +64,9 @@
             <p class="site-description">{{ site.description }}</p>
           </div> -->
           <!-- <div class="bottom-bar"></div> -->
-          <nav class="navigation target">
-            <a class="target" href="{{ site.baseurl }}/">Work</a>
-          <!-- <a class="target" href="{{ site.baseurl }}/blog">Journal</a> -->
-            <a class="target" href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
+        <!-- </header>
 
-      {{ content }}
+
       </div>
     <!-- <div class="wrapper-footer">
       <div class="container">

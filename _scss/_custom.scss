@@ -1,22 +1,15 @@
 nav {
-  text-align:center;
+  text-align:left;
   float:right;
   display:block;
-  margin: 4px 50px 0 0;
-  padding: 5px 0;
   font-weight:500;
   color:#333;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 17px;
-  }
-
+  padding-top:5px;
   a {
     text-align: left;
-    margin: 0 4px;
+    margin-right:20px;
+    font-weight:600;
+    font-size:1.1em;
   }
 }
 
@@ -24,19 +17,18 @@ nav {
   float:right;
 }
 .masthead {
-  border-bottom:1px solid #EEEEEE;
+  // border-bottom:1px solid #EEEEEE;
   margin:0 auto;
-  height:75px;
+  height:50px;
   margin-top:15px;
   font-size: 17px;
 
   @include mobile {
     text-align: center;
   }
-
   span {
     float:left;
-    font-weight:600;
+    font-weight:700;
     padding:10px 0;
     display:block;
   }
@@ -47,18 +39,10 @@ nav {
   .logo-description {
     font-weight:500;
   }
-  a.logo {
-    position: relative;
-    top: 6px;
-    height: 50px;
-    width: 50px;
-    display: block;
-    float:left;
-  }
 }
 
 p {
-  padding-top:5px;
+  // padding-top:5px;
   font-size:123px;
   a {
     border-bottom:1px solid #dbdbdb;
@@ -84,6 +68,14 @@ p {
 }
 .description-wrapper {
   margin:20px 0 0 0;
+  img {
+    padding:0 0 20px 0;
+  }
+}
+
+.home {
+  padding:30px 0 0 0;
+  width:100%;
 }
 
 .project p {
@@ -92,10 +84,25 @@ p {
 #grid[data-columns]::before {
 	content: '3 .column.size-1of3';
 }
+.nav-wrap {
+  position:relative;
+  height:80px;
+  max-width:1240px;
+  padding-top: 30px;
+  margin:0 auto;
+}
+.occupation {
+font-weight:300;
+}
 
+.footer {
+  width: 100%;
+  clear:both;
+  padding:20px 0;
+}
 /* These are the classes that are going to be applied: */
 .column { float: left; }
-.column-right { float: right; }
+.column-right { float: right;}
 .size-1of3 { width: 33.333%; }
 .col-full {
   width:100%;
@@ -116,63 +123,185 @@ p {
   width:25%;
 }
 
-@media screen and (min-width: 1200px) {
-  #wrapper {
+a.logo {
+  position: relative;
+  width: 50px;
+  display: block;
+}
+.name-wrap {
+  float:left;
+}
+.column p {
+    .name {
+      margin:0 0 0 20px;
+      font-weight:700;
+      padding-top:5px;
+      display:block;
+    }
+    .occupation {
+      margin:0 0 0 20px;
+    }
+}
+.intro {
+  height:180px;
+}
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 1300px) {
+  #wrapper, .nav-wrap, .footer {
+    max-width: 1240px; /* 960 px */
+    margin: 0 auto;
+  }
+  #grid .item:nth-of-type(4n+1){
+    padding-right:20px;
+  }
+  #grid .item:nth-of-type(4n+2){
+    padding-right:20px;
+  }
+  #grid-archive img {
+    // width:100%;
+    text-align:center;
+    padding-right:8px;
+  }
+  #grid-archive[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
+  a.logo {
+    // position: absolute;
+    // padding:35px 0 0 0;
+    float:left;
+  }
+  .home .column {
+    margin-left:0;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+  #wrapper, .nav-wrap, .footer {
     max-width: 1120px; /* 960 px */
     margin: 0 auto;
   }
-  #grid .item:nth-of-type(3n+1){
+  #grid .item:nth-of-type(4n+1){
     padding-right:20px;
   }
-  #grid .item:nth-of-type(3n+2){
+  #grid .item:nth-of-type(4n+2){
     padding-right:20px;
+  }
+  a.logo {
+    // position: absolute;
+    // padding:25px 0 0 0;
+    float:left;
+  }
+  .home .column {
+    // margin-left:80px;
+  }
+  #grid-archive[data-columns]::before {
+    content: '3 .column.size-1of3';
   }
 }
 
 @media screen and (min-width: 1008px) and (max-width: 1199px) {
-  #wrapper {
+  #wrapper, .nav-wrap, .footer {
     max-width: 55em; /* 960 px */
     margin: 0 auto;
   }
   #grid[data-columns]::before {
     content: '3 .column.size-1of3';
   }
+  #grid-archive[data-columns]::before {
+    content: '2 .column.size-1of2';
+  }
   #grid .item:nth-of-type(3n+1){
     padding-right:20px;
   }
   #grid .item:nth-of-type(3n+2){
     padding-right:20px;
   }
+  a.logo {
+    // position: absolute;
+    // padding:35px 0 0 0;
+    float:left;
+  }
+  .home .column {
+    margin-left:80px;
+  }
+  .intro {
+    width:100%;
+    p {
+      max-width:550px;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1008px) {
-  #wrapper {
-    max-width: 45em; /* 960 px */
-    margin: 0 auto;
+    #wrapper, .nav-wrap, .footer {
+      max-width: 45em; /* 960 px */
+      margin: 0 auto;
+      .col-large, .col-med, .col-small, .col-xsmall {
+        width:100%;
+        float:none;
+      }
+    }
+  	#grid[data-columns]::before {
+  		content: '2 .column.size-1of2';
+  	}
+    #grid-archive[data-columns]::before {
+      content: '2 .column.size-1of2';
+    }
+    #grid .item:nth-of-type(odd){
+      padding-right:20px;
+    }
+  .intro {
+  clear: both;
+  float: left;
+  padding-bottom: 40px;
+    p {
+    max-width: 550px;
+    }
   }
-	#grid[data-columns]::before {
-		content: '2 .column.size-1of2';
-	}
-  #grid .item:nth-of-type(odd){
-    padding-right:20px;
-  }
-  .col-large, .col-med, .col-small, .col-xsmall {
-    width:100%;
-    float:none;
-  }
+    .job-role {
+        display:none;
+    }
+    nav {
+
+    }
+    a.logo {
+      // position: absolute;
+      // padding:30px 0 0 0;
+      float:left;
+    }
+    .description {
+      width:100%;
+    }
+    .home {
+      height:auto;
+      .column {
+        margin-left:0px;
+        span {
+          margin-left:72px;
+        }
+        p {
+          padding-top:4px;
+          font-weight:500;
+        }
+      }
+    }
 }
 @media screen and (max-width: 767px){
-  #wrapper {
+  #wrapper, .nav-wrap, .footer {
     width:100%;
     max-width:100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 25px;
   }
   #grid {
     width:100%;
   }
 	#grid[data-columns]::before {
 		content: '1 .column.size-1of1';
+  }
+  #grid-archive[data-columns]::before {
+    content: '1 .column.size-1of1';
   }
   img {
     width:100%;
@@ -181,13 +310,53 @@ p {
     width:100%;
     float:none;
   }
+  .intro {
+    line-height:1.5em;
+    float: left;
+    padding-top: 10px;
+  }
   .job-role {
       display:none;
   }
   nav {
     position: absolute;
-    top: 35px;
-    left: 85px;
+    top: 45px;
+    left:90px;
+    font-weight:400;
+    margin-top:0;
+    a {
+      margin-right:4px;
+      font-weight:400;
+    }
+  }
+  a.logo {
+    position: absolute;
+    padding:20px 0 0 0;
+  }
+  .description {
+    width:100%;
+  }
+  .occupation {
+    display: none;
+  }
+  .name {
+  position: absolute;
+  top: 18px;
+  left: 70px;
+  }
+  .home {
+    height:auto;
+    padding:0;
+    .column {
+      margin-left:0px;
+      span {
+        margin-left:72px;
+      }
+      p {
+        padding-top:4px;
+        font-weight:500;
+      }
+    }
   }
 }
 

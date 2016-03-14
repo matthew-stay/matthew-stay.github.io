@@ -146,6 +146,12 @@ a.logo {
   height:180px;
 }
 
+
+.catbloc:not(:target) {
+    display: none;
+}
+
+
 // MEDIA QUERIES
 
 @media screen and (min-width: 1300px) {
@@ -314,6 +320,7 @@ a.logo {
     line-height:1.5em;
     float: left;
     padding-top: 10px;
+    height:auto;
   }
   .job-role {
       display:none;

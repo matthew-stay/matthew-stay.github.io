@@ -81,9 +81,7 @@ p {
 .project p {
   padding-bottom:20px;
 }
-#grid[data-columns]::before {
-	content: '3 .column.size-1of3';
-}
+
 .nav-wrap {
   position:relative;
   height:80px;
@@ -103,7 +101,9 @@ font-weight:300;
 /* These are the classes that are going to be applied: */
 .column { float: left; }
 .column-right { float: right;}
-.size-1of3 { width: 33.333%; }
+.size-1of4 { width: 25%; }
+.size-1of5 { width: 20%; }
+
 .col-full {
   width:100%;
 }
@@ -167,6 +167,7 @@ a.logo {
   }
   #grid {
     width:100%;
+    padding-left:20px;
   }
   #grid .item:nth-of-type(4n+1){
     padding-right:20px;
@@ -187,6 +188,9 @@ a.logo {
   .home .column {
     margin-left:0;
   }
+  #grid[data-columns]::before {
+    content: '5 .column.size-1of5';
+  }
   #grid-archive[data-columns]::before {
     content: '3 .column.size-1of3';
     // display: block;
@@ -202,6 +206,7 @@ a.logo {
   }
   #grid {
     width:100%;
+    padding-left:20px;
   }
   #grid .item:nth-of-type(4n+1){
     padding-right:20px;
@@ -215,7 +220,7 @@ a.logo {
     padding-right:8px;
   }
   #grid[data-columns]::before {
-    content: '3 .column.size-1of3';
+    content: '4 .column.size-1of4';
   }
   #grid-archive[data-columns]::before {
     content: '2 .column.size-1of2';

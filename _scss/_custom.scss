@@ -161,12 +161,35 @@ a.logo {
 
 // MEDIA QUERIES
 @media screen and (min-width: 1441px) {
+  #wrapper, .nav-wrap, .footer {
+    max-width: 1240px; /* 960 px */
+    margin: 0 auto;
+  }
+  #grid .item:nth-of-type(4n+1){
+    padding-right:20px;
+  }
+  #grid .item:nth-of-type(4n+2){
+    padding-right:20px;
+  }
+  #grid-archive img {
+    // width:100%;
+    text-align:center;
+    padding-right:8px;
+  }
+  a.logo {
+    // position: absolute;
+    // padding:35px 0 0 0;
+    float:left;
+  }
+  .home .column {
+    margin-left:0;
+  }
   #grid-archive[data-columns]::before {
     content: '3 .column.size-1of3';
-    display: block;
-    visibility: hidden;
-    position: absolute;
-    font-size: 1px;
+    // display: block;
+    // visibility: hidden;
+    // position: absolute;
+    // font-size: 1px;
   }
 }
 @media screen and (min-width: 1300px) and (max-width:1440px ){

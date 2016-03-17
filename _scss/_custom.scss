@@ -191,9 +191,6 @@ a.logo {
     // position: absolute;
     // font-size: 1px;
   }
-  #grid[data-columns]::before {
-    content: '5 .column.size-1of5';
-  }
 }
 @media screen and (min-width: 1300px) and (max-width:1440px ){
   #wrapper, .nav-wrap, .footer {
@@ -213,9 +210,6 @@ a.logo {
   }
   #grid-archive[data-columns]::before {
     content: '2 .column.size-1of2';
-  }
-  #grid[data-columns]::before {
-    content: '4 .column.size-1of4';
   }
   a.logo {
     // position: absolute;
@@ -247,9 +241,6 @@ a.logo {
   }
   #grid-archive[data-columns]::before {
     content: '2 .column.size-1of2';
-  }
-  #grid[data-columns]::before {
-    content: '3 .column.size-1of3';
   }
 }
 

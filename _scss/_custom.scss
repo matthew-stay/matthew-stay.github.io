@@ -158,6 +158,9 @@ a.logo {
     position: absolute;
     font-size: 1px;
 }
+#grid {
+    clear: both;
+}
 .grid-sizer,
 .item {
   width:31%;
@@ -279,6 +282,9 @@ a.logo {
     // padding:35px 0 0 0;
     float:left;
   }
+  .item, .grid-sizer {
+    width:47%;
+  }
   .home .column {
     font-weight:100;
   }
@@ -291,6 +297,10 @@ a.logo {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1008px) {
+  .grid-sizer,
+  .item {
+    width:47%;
+  }
     #wrapper, .nav-wrap, .footer {
       max-width: 45em; /* 960 px */
       margin: 0 auto;
@@ -308,6 +318,7 @@ a.logo {
     // #grid .item:nth-of-type(odd){
     //   padding-right:20px;
     // }
+
   .intro {
   clear: both;
   float: left;
@@ -345,6 +356,10 @@ a.logo {
     }
 }
 @media screen and (max-width: 767px){
+  .grid-sizer,
+  .item {
+    width:100%;
+  }
   #wrapper, .nav-wrap, .footer {
     width:100%;
     max-width:100%;

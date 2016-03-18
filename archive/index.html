@@ -9,11 +9,12 @@ title: Inspiration Archive | Matt Stay
           <p>I'm constantly saving material from my research and explorations. These visuals are organized by month - take a look at what's been inspiring me over the last year.</p>
         </div>
       </div>
-      <div id="grid-archive" data-columns>
-
+      <div id="grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
         {% for image in site.static_files %}
             {% if image.path contains 'images/archive' %}
-                <div class="archive-image">
+                <div class="item">
                   <img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
                 </div>
             {% endif %}

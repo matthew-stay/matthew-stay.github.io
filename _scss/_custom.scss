@@ -4,12 +4,12 @@ nav {
   display:block;
   font-weight:500;
   color:#333;
-  padding-top:5px;
+  padding-top:15px;
   a {
     text-align: left;
     margin-right:20px;
     font-weight:500;
-    font-size:1.1em;
+    font-size:18px;
   }
 }
 
@@ -361,6 +361,9 @@ a.logo {
   .grid-sizer,
   .item {
     width:100%;
+  }
+  nav {
+    padding-top:0px;
   }
   #wrapper, .nav-wrap, .footer {
     width:100%;

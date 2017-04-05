@@ -14,6 +14,12 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    <script>
+// Don't force https when serving the website locally
+if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+</script>
+
     <!-- Custom CSS -->
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="/style.css" />

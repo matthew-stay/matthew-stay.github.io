@@ -130,12 +130,12 @@ a.logo {
 }
 .name-wrap {
   float:left;
+  padding:10px;
 }
 .column p {
     .name {
       margin:0 0 0 20px;
       font-weight:700;
-      padding-top:5px;
       display:block;
     }
     .occupation {
@@ -143,9 +143,11 @@ a.logo {
     }
 }
 .intro {
-  height:160px;
+  // height:160px;
 }
-
+.intro-text {
+  padding-bottom: 200px;
+}
 
 .catbloc:not(:target) {
     display: none;

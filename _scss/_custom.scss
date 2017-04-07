@@ -56,7 +56,7 @@ p {
 }
 
 .large-type {
-  font-size:1.3em;
+  font-size:1.29em;
   line-height:1.5em;
 }
 
@@ -67,7 +67,7 @@ p {
   clear: both;
 }
 .description-wrapper {
-  margin:20px 0 0 0;
+  margin:0 0 0 0;
   img {
     padding:0 0 20px 0;
   }
@@ -144,6 +144,9 @@ a.logo {
 }
 .intro {
   // height:160px;
+  p {
+
+  }
 }
 .intro-text {
   padding-bottom: 200px;
@@ -162,6 +165,7 @@ a.logo {
 }
 #grid {
     clear: both;
+    margin-top:40px;
 }
 .grid-sizer,
 .item {
@@ -324,7 +328,7 @@ a.logo {
   .intro {
   clear: both;
   float: left;
-  padding-bottom: 40px;
+  // padding-bottom: 40px;
     p {
     max-width: 550px;
     }

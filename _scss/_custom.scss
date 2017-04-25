@@ -187,14 +187,26 @@ a.logo {
 .project-description {
   font-size:0.97em;
 }
+.info ul {
+  margin:0px;
+}
 .info, .info ul li {
-  font-size:0.85em;
+  font-size:0.825em;
   list-style: none;
   color:#828282;
+  line-height: 1.675em;
 }
 .info h2, .info h3 {
   color:#828282;
-
+  padding-bottom:5px;
+}
+.item blockquote {
+  text-align:center;
+  margin:15px auto 30px auto;
+  font-size:0.825em;
+  color:#828282;
+  max-width:60%;
+  line-height: 1.675em;
 }
 
 // MEDIA QUERIES

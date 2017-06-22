@@ -45,8 +45,8 @@ p {
   // padding-top:5px;
   font-size:123px;
   a {
-    border-bottom:1px solid #dbdbdb;
-    font-size:1em;
+    // border-bottom:1px solid #dbdbdb;
+    font-size:1.2em;
     &:hover {
       padding-bottom:0px;
       border-bottom:1px solid #dbdbdb;
@@ -105,7 +105,13 @@ font-weight:300;
 .footer {
   width: 100%;
   clear:both;
-  padding:20px 0;
+  padding:80px 0;
+}
+.item-container {
+  position: relative;
+  p {
+    margin-top:5px;
+  }
 }
 /* These are the classes that are going to be applied: */
 .column { float: left; }
@@ -153,8 +159,35 @@ a.logo {
 }
 .intro {
   // height:160px;
+  span {
+    a {
+      &:hover{border-bottom: 1px solid #dbdbdb; padding-bottom: 0px;}
+    }
+  }
   p {
 
+  }
+}
+.callout {
+  margin-left:10px;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.325em;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color:#525252;
+  a {
+    border-bottom: 1px solid #dbdbdb;
+  }
+  p, a {
+    font-size:1.5rem;
+  }
+}
+#tags {
+  font-size:1rem;
+  margin-bottom:30px;
+  li {
+  display:inline;
+  line-height:1.5em;
   }
 }
 .intro-text {
@@ -330,8 +363,19 @@ a.logo {
   .home .column {
     font-weight:100;
   }
-  .intro {
+  .item-container {
     width:100%;
+    float:left;
+  }
+  .callout-container {
+    width:100%;
+    float:left;
+    .callout {
+      margin:0 0 20px 0;
+    }
+  }
+  .intro {
+    width:75%;
     p {
       max-width:550px;
     }
@@ -380,6 +424,9 @@ a.logo {
       // padding:30px 0 0 0;
       float:left;
     }
+    .callout {
+      margin-left:0px;
+    }
     .description {
       width:100%;
     }
@@ -388,7 +435,7 @@ a.logo {
       .column {
         margin-left:0px;
         span {
-          margin-left:72px;
+          // margin-left:72px;
         }
         p {
           padding-top:4px;
@@ -422,6 +469,9 @@ a.logo {
   // }
   img {
     width:100%;
+  }
+  .callout {
+    margin-left:0px;
   }
   .col-large, .col-med, .col-small, .col-xsmall {
     width:100%;
@@ -472,7 +522,7 @@ a.logo {
     .column {
       margin-left:0px;
       span {
-        margin-left:72px;
+        // margin-left:72px;
       }
       p {
         padding-top:4px;

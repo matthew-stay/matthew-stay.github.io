@@ -58,14 +58,23 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
 }
-
+.current {
+  color: #000000;
+  border-bottom: 1px solid #dbdbdb;
+  font-size: 1em;
+  font-weight:bold;
+  &:hover {
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom:0px;
+  }
+}
 p {
   font-family:$open-sans;
   font-size:0.825em;
   line-height:1.675em;
 }
 h1 {
-  font-size: 28px;
+  font-size: 1.6rem;
   font-weight:900;
   line-height: 1.325em;
   a {
@@ -101,6 +110,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
+    cursor: pointer;
     border-bottom:1px;
     padding-bottom:2px;
   }

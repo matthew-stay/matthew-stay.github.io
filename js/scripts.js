@@ -8,7 +8,7 @@ $.lazyLoadXT.updateEvent+=' layoutComplete';
 var $grid = $('#grid').isotope({
   // options
   itemSelector: '.item',
-  transitionDuration: 0,
+  transitionDuration: 10,
   percentPosition: true,
 masonry: {
   // use element for option
@@ -23,4 +23,11 @@ $(window).load(function(){
 
 $grid.imagesLoaded().progress( function() {
   $grid.isotope('layout');
+});
+
+$('#tags').on( 'click', 'a', function() {
+  $('#tags a').removeClass("current");
+  var filterValue = $(this).attr('data-filter');
+  $(this).addClass("current");
+  $grid.isotope({ filter: filterValue });
 });

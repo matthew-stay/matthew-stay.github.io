@@ -16,6 +16,9 @@ nav {
 .align-right {
   float:right;
 }
+.text-left {
+  text-align: left !important;
+}
 .masthead {
   // border-bottom:1px solid #EEEEEE;
   margin:0 auto;
@@ -46,8 +49,7 @@ nav {
   border-bottom:none;
 }
 p {
-  // padding-top:5px;
-  font-size:123px;
+  font-size:0.9rem;
   a {
     border-bottom:1px solid #dbdbdb;
     // font-size:1.2em;
@@ -86,13 +88,13 @@ p {
 }
 .project h1 {
   // font-size:1.75em;
-  font-size: 2.5em;
+  font-size: 2.25em;
     line-height: 1em;
     font-family:$open-sans;
     text-transform:uppercase;
 }
 .project p {
-  padding-bottom:20px;
+
 }
 .body-content {
   text-align: center;
@@ -100,15 +102,21 @@ p {
 }
 .info {
   max-width:500px;
+  padding-top:10px;
 }
 .project-body {
-  padding:40px 0 20px 0;
+  padding:60px 0 60px 0;
+}
+.left-body {
+  float: left;
+  margin: 60px 0 60px 40px;
+  text-align:left;
 }
 .grid {
   .info, .project-body {
     margin:0 auto;
     text-align:center;
-    font-size:1em;
+    font-size:0.9rem;
   }
 }
 .nav-wrap {
@@ -229,10 +237,17 @@ a.logo {
     clear: both;
     margin-top:40px;
 }
+.item-container {
+  .item {
+    margin-bottom:5px;
+  }
+}
 .grid-sizer,
 .item {
   width:31%;
-  margin-bottom:5px;
+}
+.project item {
+  margin:0;
 }
 .item--width2 {
   width:66%;
@@ -568,4 +583,5 @@ a.logo {
 .column { float: left; }
 .size-1of1 { width: 100%; line-height: 0px;}
 .size-1of2 { width: 50%; line-height: 0px;}
-.size-1of3 { width: 33.333%; line-height: 0px;}
+.size-1of3 { width: 30%; line-height: 0px;}
+.size-2of3 { width: 64%; line-height: 0px;}

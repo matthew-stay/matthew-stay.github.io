@@ -18,6 +18,15 @@
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Proza+Libre" rel="stylesheet">    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/js/jquery.lazyloadxt.fadein.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42281370-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-42281370-1');
+    </script>
 
 </head>
   <body>
@@ -77,13 +86,6 @@
         </footer>
       </div>
     </div> -->
-    <script>
-    if(false == /(^|;)\s?first=1\s?($|;)/i.test(document.cookie)) {
-        document.body.id="first";
-        document.cookie = "first=1; expire= path=/";
-    }
-    </script>
-    {% include analytics.html %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="../js/jquery.lazyloadxt.min.js"></script>

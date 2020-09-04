@@ -1,0 +1,41 @@
+.logomark img { width: 50px; padding: 0 0 35px 0; }
+
+.button { border: 1px solid #848484; border-radius: 5px; padding: 10px 20px; color: #000; display: block; width: 120px; margin: 20px auto 35px auto; text-align: center; }
+
+.button:visited { color: #000; }
+
+.button:hover { color: #000; text-decoration: none; }
+
+.intro { padding: 160px 0; background-image: url("../images/hero-background.png"); background-repeat: no-repeat; background-position: right 100px; }
+
+.home #grid .item-container { text-align: center; padding: 75px 0; }
+
+.home #grid .item-container .item { max-width: 720px; margin: 0 auto; }
+
+.home #grid .item-container h5 { margin: 0; }
+
+@media screen and (min-width: 1200px) { .wrapper { width: 100%; max-width: calc(100% - (180px * 2)); margin: 0 180px; } }
+
+@media screen and (min-width: 1600px) { .wrapper { max-width: 1200px; margin: 0 auto; } }
+
+p { font-size: 18px; line-height: 1.65; }
+
+h1 { font-weight: 600; font-size: 2.8427em; line-height: 1.15; }
+
+h2 { font-size: 1.99em; font-weight: 600; line-height: 1.25; }
+
+h3 { font-size: 1.414em; font-weight: 700; }
+
+h4 { font-size: 1.25em; font-weight: 700; }
+
+h5 { font-size: 1.15em; font-weight: 700; }
+
+@media screen and (min-width: 601px) { .home .intro h1 { max-width: 600px; } .home .intro p { max-width: 650px; } #grid h2 { max-width: 550px; margin: 0 auto; } }
+
+@media screen and (min-width: 1200px) { .home .intro h1 { max-width: 650px; } .home .intro p { max-width: 700px; } #grid h2 { max-width: 650px; margin: 0 auto; } h1 { font-weight: 600; font-size: 3.998em; line-height: 1.15; } h2 { font-size: 2.8427em; font-weight: 600; line-height: 1.15; } h3 { font-size: 1.99em; font-weight: 700; } h4 { font-size: 1.414em; font-weight: 700; } }
+
+h5 { color: #848484; }
+
+p { color: #848484; }
+
+/*# sourceMappingURL=main.css.map */

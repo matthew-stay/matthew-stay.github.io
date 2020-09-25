@@ -1,0 +1,61 @@
+@import "variables";
+
+.logomark img {
+    width:50px;
+    padding:0 0 35px 0;
+}
+.button {
+    border: 1px solid $grey;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #000;
+    display: block;
+    width: 120px;
+    margin: 20px auto 35px auto;
+    text-align: center;
+    &:visited {
+        color: #000;
+    }
+    &:hover {
+        color: #000;
+        text-decoration: none;
+    }
+}
+.intro {
+    padding:160px 0;
+    // background-image:url("../images/hero-background.png");
+    background-repeat: no-repeat;
+    background-position: right 100px;
+}
+.home #grid .item-container {
+    text-align: center;
+    padding: 75px 0;
+    .item {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    h5 {
+        margin: 0;
+    }
+}
+// @media screen and (max-width: 600px) {
+//     .home #grid .item-container {
+//         text-align: left;
+//     }
+// }
+@media screen and (max-width: 800px) {
+}
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width: 100%;
+        max-width: calc(100% - (180px * 2));
+        margin: 0 180px;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .wrapper {
+        max-width: 1200px;
+        margin:0 auto;
+    }
+}
+

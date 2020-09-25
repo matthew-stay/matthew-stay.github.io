@@ -6,7 +6,7 @@
 
 .button:hover { color: #000; text-decoration: none; }
 
-.intro { padding: 160px 0; background-image: url("../images/hero-background.png"); background-repeat: no-repeat; background-position: right 100px; }
+.intro { padding: 160px 0; background-repeat: no-repeat; background-position: right 100px; }
 
 .home #grid .item-container { text-align: center; padding: 75px 0; }
 

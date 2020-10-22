@@ -22,7 +22,7 @@
     }
 }
 .intro {
-    padding:160px 0;
+    padding:6vh 0 ;
     // background-image:url("../images/hero-background.png");
     background-repeat: no-repeat;
     background-position: right 100px;
@@ -37,6 +37,12 @@
     h5 {
         margin: 0;
     }
+}
+ul {
+    list-style-type: none;
+}
+.work-list a {
+    font-weight:bold;
 }
 // @media screen and (max-width: 600px) {
 //     .home #grid .item-container {
